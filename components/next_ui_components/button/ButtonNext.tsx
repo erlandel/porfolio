@@ -1,40 +1,36 @@
-import React from 'react';
-import { Button } from '@nextui-org/react';
+import React from "react";
+import { Button } from "@nextui-org/react";
 
 type ButtonProps = {
   text?: string;
   onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
   disabled?: boolean;
   className?: string;
-   radius?:   "none" | "sm" | "md" | "lg"| "full"
-  icon?: React.ReactNode
-   
+  radius?: "none" | "sm" | "md" | "lg" | "full";
+  icon?: React.ReactNode;
 };
 
-const ButtonNext: React.FC<ButtonProps> = ({ 
-  text, 
-  onClick, 
-  type = 'button', 
-  disabled = false, 
-  className = 'bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full',
+const ButtonNext: React.FC<ButtonProps> = ({
+  text,
+  onClick,
+  type = "button",
+  disabled = false,
+  className = "bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg w-full",
   icon,
-  radius = 'full'
+  radius = "full",
 }) => {
   return (
-    
-        <Button
+    <Button
       type={type}
       onClick={onClick}
       disabled={disabled}
       className={className}
-      radius={radius}     
+      radius={radius}
     >
       {icon && <span className="ml-2">{icon}</span>}
       {text}
     </Button>
-   
-    
   );
 };
 

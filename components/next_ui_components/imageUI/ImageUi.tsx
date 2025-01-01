@@ -6,7 +6,11 @@ type ImageUIProps = {
   isBlurred?: boolean; // Opcional, permite controlar el desenfoque
 };
 
-export default function ImageUI({ src, alt = "Image", isBlurred = true }: ImageUIProps) {
+export default function ImageUI({
+  src,
+  alt = "Image",
+  isBlurred = true,
+}: ImageUIProps) {
   return (
     <Image
       isZoomed

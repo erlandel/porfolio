@@ -20,7 +20,11 @@ export default function NavbarUI() {
   const menuItems = [
     { label: "Experiencia", href: "#experiencia", Icon: UilSuitcase },
     { label: "Proyectos", href: "#proyectos", Icon: GravityUiCode },
-    { label: "Tecnologías", href: "#tecnologias", Icon: FluentGlobeDesktop24Filled },
+    {
+      label: "Tecnologías",
+      href: "#tecnologias",
+      Icon: FluentGlobeDesktop24Filled,
+    },
     { label: "Sobre mí", href: "#sobre-mi", Icon: TablerUserCheck },
     { label: "Contacto", href: null, Icon: MdiEmailPlus },
   ];
@@ -41,7 +45,10 @@ export default function NavbarUI() {
       const element = document.querySelector(section.href || "");
       if (element && element instanceof HTMLElement) {
         const { offsetTop, offsetHeight } = element;
-        if (window.scrollY >= offsetTop - 100 && window.scrollY < offsetTop + offsetHeight) {
+        if (
+          window.scrollY >= offsetTop - 100 &&
+          window.scrollY < offsetTop + offsetHeight
+        ) {
           currentSection = section.href;
         }
       }
@@ -86,11 +93,12 @@ export default function NavbarUI() {
 
           {/* Logo y nombre */}
           <div className="flex w-20 items-center justify-start">
-            <Link href="#"> {/* Link que hace scroll hacia el inicio de la página */}
+            <Link href="#">
+              {" "}
+              {/* Link que hace scroll hacia el inicio de la página */}
               <Logo className="w-[4rem] h-14 mr-2 text-white cursor-pointer" />
             </Link>
           </div>
-
 
           {/* Menú de navegación */}
           <div className="w-full flex items-center justify-center mr-0 xl:mr-20">
@@ -98,12 +106,19 @@ export default function NavbarUI() {
               {menuItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex cursor-pointer transition-colors py-4 items-center ${activeLink === item.href ? "text-orange-400" : "text-white"
-                    }`}
-                  onClick={item.label === "Contacto" ? handleContact : undefined}
+                  className={`flex cursor-pointer transition-colors py-4 items-center ${
+                    activeLink === item.href ? "text-orange-400" : "text-white"
+                  }`}
+                  onClick={
+                    item.label === "Contacto" ? handleContact : undefined
+                  }
                 >
                   <item.Icon className="mr-2 w-5 h-5" />
-                  {item.href ? <Link href={item.href}>{item.label}</Link> : <span>{item.label}</span>}
+                  {item.href ? (
+                    <Link href={item.href}>{item.label}</Link>
+                  ) : (
+                    <span>{item.label}</span>
+                  )}
                 </div>
               ))}
             </div>

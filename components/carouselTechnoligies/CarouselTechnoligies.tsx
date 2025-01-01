@@ -3,16 +3,15 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/autoplay';
+import "swiper/css";
+import "swiper/css/autoplay";
 
 interface CarouselProps {
-  images: string[],
+  images: string[];
   names: string[];
 }
 
 const CarouselFooter: React.FC<CarouselProps> = ({ images, names }) => {
-
   return (
     <Swiper
       modules={[Autoplay]}
@@ -33,7 +32,9 @@ const CarouselFooter: React.FC<CarouselProps> = ({ images, names }) => {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center justify-center w-28 h-36"> {/* Aumentamos la altura del contenedor */}
+          <div className="flex flex-col items-center justify-center w-28 h-36">
+            {" "}
+            {/* Aumentamos la altura del contenedor */}
             <div className="relative w-28 h-28 rounded-3xl flex items-center justify-center">
               <div className="absolute inset-0 bg-black opacity-25 rounded-3xl"></div>
               <div className="z-10">
@@ -47,11 +48,10 @@ const CarouselFooter: React.FC<CarouselProps> = ({ images, names }) => {
                 />
               </div>
             </div>
-            <p className="text-sm mt-2 text-center">{names[index]}</p> {/* El párrafo está ahora centrado debajo de la imagen */}
+            <p className="text-sm mt-2 text-center">{names[index]}</p>{" "}
+            {/* El párrafo está ahora centrado debajo de la imagen */}
           </div>
         </SwiperSlide>
-
-
       ))}
     </Swiper>
   );

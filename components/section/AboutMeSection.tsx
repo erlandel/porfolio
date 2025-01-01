@@ -1,7 +1,6 @@
 import { TablerUserCheck } from "@/icons/icons";
 import { Avatar } from "@nextui-org/react";
 
-
 const AboutMeSection: React.FC = () => {
   return (
     <div>
@@ -13,18 +12,25 @@ const AboutMeSection: React.FC = () => {
       <div className="flex flex-col items-center mt:-8 sm:mt-4  gap-10 text-justify md:flex-row md:justify-center">
         <div className="order-2 md:order-1 ">
           <p>
-            Me llamo Erlan Delfino, y mi incursión en el mundo de la programación{' '}
+            Me llamo Erlan Delfino, y mi incursión en el mundo de la
+            programación{" "}
             <span className="bg-gradient-to-tr from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-              comenzó en 2021, cuando inicié mis estudios en la Universidad de Ciencias Informáticas
+              comenzó en 2021, cuando inicié mis estudios en la Universidad de
+              Ciencias Informáticas
             </span>
-            . Poco tiempo después descubrí mi pasión por el desarrollo web, un área que me permite combinar creatividad con lógica para crear soluciones innovadoras.
+            . Poco tiempo después descubrí mi pasión por el desarrollo web, un
+            área que me permite combinar creatividad con lógica para crear
+            soluciones innovadoras.
           </p>
 
           <p className="mt-6">
-            Actualmente, estoy cursando el último año de mi carrera, y a lo largo de este tiempo he tenido la oportunidad de{' '}
+            Actualmente, estoy cursando el último año de mi carrera, y a lo
+            largo de este tiempo he tenido la oportunidad de{" "}
             <span className="bg-gradient-to-tr from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-              desarrollar diversos proyectos, tanto académicos como profesionales, colaborando con empresas 
-            </span> en la creación de soluciones tecnológicas funcionales y atractivas.
+              desarrollar diversos proyectos, tanto académicos como
+              profesionales, colaborando con empresas
+            </span>{" "}
+            en la creación de soluciones tecnológicas funcionales y atractivas.
           </p>
         </div>
 

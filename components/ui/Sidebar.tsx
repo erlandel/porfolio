@@ -14,7 +14,12 @@ interface SidebarProps {
   handleContact: () => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isOpen, menuItems, activeLink, handleContact }) => {
+const Sidebar: React.FC<SidebarProps> = ({
+  isOpen,
+  menuItems,
+  activeLink,
+  handleContact,
+}) => {
   return (
     <div
       className={`fixed inset-0 z-40 mt-[4.1rem] transition-transform transform ${

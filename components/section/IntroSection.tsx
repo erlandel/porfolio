@@ -1,5 +1,8 @@
 import React from "react";
-import { MdiEmailPlus, StreamlineBusinessUserCurriculumSolid } from "@/icons/icons";
+import {
+  MdiEmailPlus,
+  StreamlineBusinessUserCurriculumSolid,
+} from "@/icons/icons";
 import ButtonNext from "../next_ui_components/button/ButtonNext";
 import { Avatar } from "@nextui-org/react";
 
@@ -9,18 +12,21 @@ interface ProfileCardProps {
 
 const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
   return (
-    <div >
+    <div>
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="w-[20rem] sm:w-[25rem] xl:w-[30rem] mt-4 xl:mt-0 order-2 md:order-1">
           <h1 className="text-2xl m-2 text-center">
-            Hola,{' '}
+            Hola,{" "}
             <span className="bg-gradient-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
               soy Erlan G.
             </span>
           </h1>
 
           <p className=" sm:text-md md:text-lg text-justify">
-            Futuro Ingeniero en Ciencias Informáticas, tengo +1 año de experiencia en el desarrollo frontend de aplicaciones web, combinando diseño moderno con funcionalidades eficientes para crear experiencias digitales únicas.
+            Futuro Ingeniero en Ciencias Informáticas, tengo +1 año de
+            experiencia en el desarrollo frontend de aplicaciones web,
+            combinando diseño moderno con funcionalidades eficientes para crear
+            experiencias digitales únicas.
           </p>
 
           <div className="m-2 flex items-center justify-between">
@@ -34,7 +40,9 @@ const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
 
             <div className="w-32 sm:w-40">
               <ButtonNext
-                icon={<StreamlineBusinessUserCurriculumSolid className="w-5 h-5" />}
+                icon={
+                  <StreamlineBusinessUserCurriculumSolid className="w-5 h-5" />
+                }
                 text="Curriculo"
               />
             </div>
