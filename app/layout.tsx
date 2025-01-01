@@ -8,7 +8,11 @@ import { fontSans } from "@/config/fonts";
 import NavbarUI from "@/components/ui/NavbarUI";
 import { FooterUI } from "@/components/ui/FooterUI";
 
-export const metadata: Metadata = {};
+export const metadata: Metadata = {
+  title: "Porfolio-DelDev", 
+  description: "Portfolio de desarrollo web de DelDev", 
+  robots: "index, follow",
+};
 
 export const viewport: Viewport = {
   themeColor: [
