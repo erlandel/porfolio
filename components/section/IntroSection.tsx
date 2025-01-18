@@ -12,9 +12,9 @@ interface ProfileCardProps {
 
 const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
   return (
-    <div>
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="w-[20rem] sm:w-[25rem] xl:w-[30rem] mt-4 xl:mt-0 order-2 md:order-1">
+    <div className="w-full max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="w-full md:w-[25rem] xl:w-[30rem] mt-4 xl:mt-0 order-2 md:order-1">
           <h1 className="text-2xl m-2 text-center">
             Hola,{" "}
             <span className="bg-gradient-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
@@ -29,7 +29,7 @@ const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
             experiencias digitales únicas.
           </p>
 
-          <div className="m-2 flex items-center justify-between">
+          <div className="m-2 flex items-center justify-between ">
             <div className="w-32 sm:w-40">
               <ButtonNext
                 icon={<MdiEmailPlus className="w-5 h-5" />}

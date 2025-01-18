@@ -21,7 +21,7 @@ export default function Home() {
         <TypingEffect text="Keep creating, every line of code is a step towards the future!" />
       </section>
 
-      <section className="mx-8 mt-[5rem]">
+      <section className="px-6 sm:px-8 lg:px-12 mt-[5rem]">
         <IntroSection handleContact={handleContact} />
       </section>
 
