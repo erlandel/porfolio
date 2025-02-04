@@ -39,7 +39,7 @@ const AboutMeSection: React.FC = () => {
             className="w-36 h-36 md:w-56 md:h-56 transform rotate-6"
             isBordered
             radius="sm"
-            src="images/avatar/avatarYoGiOh.jpg"
+            src="images/avatar/2.webp"
           />
         </div>
       </div>

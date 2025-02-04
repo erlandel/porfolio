@@ -53,7 +53,7 @@ const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
           <Avatar
             className="w-36 h-36 md:w-56 md:h-56"
             isBordered
-            src="images/avatar/avatarYoGiOh.jpg"
+            src="images/avatar/1.webp"
             alt="Erlan G. Avatar"
           />
         </div>
