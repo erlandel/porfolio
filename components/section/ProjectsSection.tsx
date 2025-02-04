@@ -22,8 +22,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
       description:
         "La aplicación permite a los usuarios buscar vuelos,reservar y gestionar boletos de manera eficiente.Creada desde cercon cero con Next.js, TailwindCSS y TypeScript.",
-      codeUrl: "https://github.com/erlang/portafolio",
-      previewUrl: "https://eclipse-frontend-production.up.railway.app/",
+      codeUrl: "https://github.com/erlandel/Eclipse-Frontend",
+      previewUrl: "https://eclipse-frontend-six.vercel.app/",
     },
   ];
 
