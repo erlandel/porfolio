@@ -39,12 +39,14 @@ const IntroSection: React.FC<ProfileCardProps> = ({ handleContact }) => {
             </div>
 
             <div className="w-32 sm:w-40">
-              <ButtonNext
-                icon={
-                  <StreamlineBusinessUserCurriculumSolid className="w-5 h-5" />
-                }
-                text="Curriculo"
-              />
+              <a href="/CV/CV.pdf" download>
+                <ButtonNext
+                  icon={
+                    <StreamlineBusinessUserCurriculumSolid className="w-5 h-5" />
+                  }
+                  text="Curriculo"
+                />
+              </a>
             </div>
           </div>
         </div>
